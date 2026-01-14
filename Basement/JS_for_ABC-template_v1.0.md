@@ -159,7 +159,7 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
    取り込み例
 
    ```javascript
-const N = nextNum();
+   const N = nextNum();
    const A = [];
    for (let i = 0; i < N; i++) {
        A.push(nextNum());
@@ -171,7 +171,7 @@ const N = nextNum();
    取り込み結果
 
    ```javascript
-// console.log(N);
+   // console.log(N);
    10
    // console.log(A);
    [1, 1, 1, 4, 4, 4, 4, 1, 2, 3]
@@ -193,7 +193,8 @@ const N = nextNum();
 
    入力条件
 
-   ![ABC440-Cの入力条件](../images/basement/ABC440C_input_ja.png)入力例
+   ![ABC440-Cの入力条件](../images/basement/ABC440C_input_ja.png)
+   入力例
 
    ```
    4
@@ -462,7 +463,7 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
 
    ![ABC440-Cの入力条件](../images/basement/ABC440C_input_en.png)
    
-   *Input Example**
+   **Input Example**
    
    ```
    4
