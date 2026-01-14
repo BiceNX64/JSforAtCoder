@@ -1,3 +1,5 @@
+**Scroll down for English!**
+
 # 🗺️ JS for AtCoder: JSで緑を目指す旅の記録
 
 **JavaScriptで「緑」を目指す、Web系独学エンジニアの記録**
@@ -58,7 +60,7 @@ AI（Grok）による2025年時点の推定データによれば、JS勢は極�
 
 「情報がないなら、自分で作ればいい」
 
-開発の現場ではメジャーともいえるJavaScriptが競技プログラミングの主流でない最大の理由は、性能差よりも「情報の不足」にあると考えています。
+開発の現場ではメジャーともいえるJavaScriptを主戦場とする競技プログラマーは非常に少ないのが現実ですが、その最大の理由は言語の競技プログラミングに対する適性の差よりも圧倒的な「情報の不足」にあると考えています。
 
 このリポジトリは、荒野を開拓する私のベースキャンプであり、以下のようなコンテンツを公開・更新していきます。
 
@@ -67,3 +69,77 @@ AI（Grok）による2025年時点の推定データによれば、JS勢は極�
 - 📝 **Travelogue:** ほぼ毎週参加するABCの実戦記
 
 これからJSでAtCoderに挑戦する人たちにとって、この記録が誰かの「道標」になれば幸いです。
+
+
+
+---
+
+# 🗺️ JS for AtCoder: A Journey to Reach "Green" with JavaScript
+
+**The records of a self-taught Web engineer aiming for the "Green" rank in AtCoder using JavaScript.**
+
+## 🖋 Introduction
+
+I am currently teaching myself to become a full-stack Web engineer as a hobby while working in a non-IT field (started learning in June 2025).
+
+The first programming language I learned was JavaScript, and I mastered the basics primarily through the "Web Developer Bootcamp" on Udemy. It was a long-form course that started with HTML/CSS/JS and eventually involved cloning simple apps using the MERN stack. I became interested in competitive programming after seeing it occasionally on social media and thinking it looked fascinating.
+
+### Why Competitive Programming with JavaScript?
+
+While Python is often recommended for competitive programming, I chose JS for several specific reasons:
+
+- **Consolidation of Learning:** JS is the one and only language that runs in the browser, allowing for consistent development from the front-end to the back-end. I wanted to deepen and broaden my mastery of my first language efficiently.
+- **Taking the Path Less Traveled:** I wanted to go against the conventional wisdom that says competitive programming equals C++ or Python, and try to blaze a trail where none exists. Since this is a hobby, I have the freedom to choose my own path.
+
+To solve the common problem for beginners of "knowing how to write but not knowing what to write," I decided to take on AtCoder—a platform of puzzles with clear objectives. My current goal is to reach the "Green" rating, which is considered a mark of a competent coder.
+
+------
+
+## 🚧 The First Barrier: The Ritual of Node.js I/O
+
+The first obstacle I faced was the overwhelming gap between the browser environment and the Node.js environment. I never realized in my daily studies that the simple task of receiving standard input could be such a high wall to climb.
+
+At first, I managed by using VS Code snippets or custom scripts that read input from a txt file. However, in the heat of actual competition, I experienced mistakes like submitting test code by accident and getting errors.
+
+To eliminate this inefficient workflow, I eventually built a **"Template that works for both local testing (input.txt) and official submission."** Looking back, the fact that such templates were hard to find for JS was the starting point for this project: I want to provide information for others challenging competitive programming with JavaScript.
+
+👉 See the `Basement/` directory for details.
+
+------
+
+## ⚔️ The Next Barrier: Algorithms as a "Lingua Franca"
+
+As I participated in contests (ABC), I felt the "Wall of Problem C and beyond," which cannot be overcome by knowing syntax alone. Terms like "Cumulative Sum," "Stack," and "Run-Length Encoding" flying around on social media are the common language of competitive programmers.
+
+- **The Essence:** It's not about inventing a solution on the spot, but about equipping yourself with the wisdom of predecessors (algorithms) and choosing the right one for the job.
+- **The Challenge:** Even though algorithms themselves have no language barrier, practical code examples are heavily biased toward C++ and Python. JS users are constantly forced to "translate" these concepts.
+
+In this repository, I will accumulate the algorithms I've learned as my own **JS Library**, maintaining it as an armory for fighting with JavaScript.
+
+------
+
+## 📉 Current Status: The Position of JavaScript Users
+
+According to estimated data for 2025 by AI (Grok), the JS contingent is an extreme minority.
+
+| **Item**               | **Status**                                 | **Notes**                                                    |
+| ---------------------- | ------------------------------------------ | ------------------------------------------------------------ |
+| **Participation Rate** | **0.3% – 0.8%**                            | Based on ABC submissions. Decreases in higher ranks.         |
+| **Main Obstacles**     | 🐢 Execution Speed / 📚 Extreme Lack of Info | Issues with language specs, such as handling 64-bit integers. |
+| **Conclusion**         | **Endangered Species**                     | However, up to the Green rate, the "availability of information" matters more than language performance differences. |
+
+------
+
+## 🎯 Purpose of This Repository
+
+"If the information doesn't exist, I'll create it myself."
+
+I believe the main reason why JavaScript—so dominant in professional development—is not mainstream in competitive programming is more about the "lack of information" than the difference in performance.
+
+This repository is my basecamp as I cultivate this wilderness. I will publish and update the following content:
+
+- 🛠 **Basement:** Essential initial equipment, including useful templates and cheat sheets.
+- 📚 **Vault:** Weapons for competitive programming implemented in JS (Algorithm explanations + representative past problems).
+- 📝 **Travelogue:** Real-world battle records of the ABC contests I participate in almost every week.
+
+I hope these records serve as a "guidepost" for others who choose to challenge AtCoder with JavaScript in the future.
