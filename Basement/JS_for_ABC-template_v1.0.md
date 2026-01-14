@@ -149,7 +149,9 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
 
    入力条件
 
-   ![ABC438-Cの入力条件](../images/basement/ABC438C_input_ja.png)入力例
+   ![ABC438-Cの入力条件](../images/basement/ABC438C_input_ja.png)
+   
+   入力例
 
    ```
    10
@@ -194,6 +196,7 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
    入力条件
 
    ![ABC440-Cの入力条件](../images/basement/ABC440C_input_ja.png)
+   
    入力例
 
    ```
