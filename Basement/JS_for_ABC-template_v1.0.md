@@ -35,11 +35,11 @@ function Main(input) {
     const nextBigInt = () => BigInt(next());
     // const lines = input.replace(/\r/g, '').trim().split(/\n/);
 
-    // 👇️ ロジックを記述 👇️
+    // 👇️ Logic here 👇️
 
 
 
-    // 👆️ ロジックを記述 👆️
+    // 👆️ Logic here 👆️
 }
 
 Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : process.argv[2], "utf8"));
@@ -272,11 +272,11 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
 			"    const nextBigInt = () => BigInt(next());",
 			"    // const lines = input.replace(/\\r/g, '').trim().split(/\\n/);",
 			"",
-			"    // 👇️ ロジックを記述 👇️",
+			"    // 👇️ Logic here 👇️",
 			"",
 			"    $0",
 			"",
-			"    // 👆️ ロジックを記述 👆️",
+			"    // 👆️ Logic here 👆️",
 			"}",
 			"",
 			"Main(require(\"fs\").readFileSync(process.platform === 'linux' ? \"/dev/stdin\" : process.argv[2], \"utf8\"));"
@@ -327,11 +327,11 @@ function Main(input) {
     const nextBigInt = () => BigInt(next());
     // const lines = input.replace(/\r/g, '').trim().split(/\n/);
 
-    // 👇️ Write your logic here 👇️
+    // 👇️ logic here 👇️
 
 
 
-    // 👆️ Write your logic here 👆️
+    // 👆️ logic here 👆️
 }
 
 Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : process.argv[2], "utf8"));
@@ -541,11 +541,11 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
 			"    const nextBigInt = () => BigInt(next());",
 			"    // const lines = input.replace(/\\r/g, '').trim().split(/\\n/);",
 			"",
-			"    // 👇️ Write your logic here 👇️",
+			"    // 👇️ logic here 👇️",
 			"",
 			"    $0",
 			"",
-			"    // 👆️ Write your logic here 👆️",
+			"    // 👆️ logic here 👆️",
 			"}",
 			"",
 			"Main(require(\"fs\").readFileSync(process.platform === 'linux' ? \"/dev/stdin\" : process.argv[2], \"utf8\"));"
