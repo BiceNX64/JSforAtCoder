@@ -151,6 +151,7 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
    入力は以下の形式で標準入力から与えられる。
 
    > $N$
+   > 
    > $T_1 \dots T_N$
 
    
@@ -208,8 +209,11 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
    入力は以下の形式で標準入力から与えられる。ここで$\mathrm{case}_i$は$i$番目のテストケースを意味する。
    
    > $T$
+   > 
    > $\mathrm{case}_1$
+   > 
    > $\vdots$
+   > 
    > $\mathrm{case}_T$
    
    各テストケースは以下の書式で与えられる。
@@ -462,6 +466,7 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
    The input is given from Standard Input in the following format:
 
    > $N$
+   > 
    > $T_1 \dots T_N$
 
    
@@ -506,8 +511,11 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
    The input is given from Standard Input in the following format, where $\mathrm{case}_i$ denotes the $i$-th test case.
    
    > $T$
+   > 
    > $\mathrm{case}_1$
+   > 
    > $\vdots$
+   > 
    > $\mathrm{case}_T$
    
    Each test case is given in the following format:
