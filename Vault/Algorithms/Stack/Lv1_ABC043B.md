@@ -18,13 +18,9 @@
 
 まずは、今回の問題をみていきましょう。
 
-## ❓ 問題文
+## ❓ 考え方
 
-![ABC043B_problem_statement_ja](../../../images/vault/algorithms/stack/ABC043B/ABC043B_problem_statement_ja.png)
-
-### 📥 入力と出力
-
-![ABC043B_input_ja](../../../images/vault/algorithms/stack/ABC043B/ABC043B_input_ja.png)
+(※ 問題の詳細は、以下のリンクからご確認ください。 [ABC043 B - バイナリハックイージー 問題文](https://atcoder.jp/contests/abc043/tasks/abc043_b))
 
 ルールはシンプルで、3つのキーを与えられた順番に押したあとにどのような文字列になっているか？です。 そして、3つのキーの挙動は以下のとおり。
 
@@ -143,11 +139,8 @@ The key is to manage the very last element of the array using these two methods.
 
 Let's look at the problem.
 
-## ❓ Problem Statement
-![ABC043B_problem_statement_en](../../../images/vault/algorithms/stack/ABC043B/ABC043B_problem_statement_en.png)
-
-### 📥Input and Output
-![ABC043B_input_en](../../../images/vault/algorithms/stack/ABC043B/ABC043B_input_en.png)
+## ❓ How to solve
+(Please refer to the problem statement at the following link: [ABC043 B - Unhappy Hacking (ABC Edit)](https://atcoder.jp/contests/abc043/tasks/abc043_b))
 
 The rules are simple: what string do you end up with after pressing three keys in the given order? The behaviors of the three keys are as follows:
 
