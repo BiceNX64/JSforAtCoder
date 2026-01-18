@@ -141,24 +141,30 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
 
 ### ⚔️ 実践例
 
-1. [ABC438 **C - 1D puyopuyo**](https://atcoder.jp/contests/abc438/tasks/abc438_c)
-
-   2025-12-27のABC438の出題です。
+1. 基本形
 
    1～N個の数字を取り込むパターンで、基本形といってもいい頻出のパターンです。
 
-   入力条件
-
-   ![ABC438-Cの入力条件](../images/basement/ABC438C_input_ja.png)
    
-   入力例
+
+   **入力**
+   入力は以下の形式で標準入力から与えられる。
+
+   > $N$
+   > $T_1 \dots T_N$
+
+   
+
+   **入力例**
 
    ```
    10
    1 1 1 4 4 4 4 1 2 3
    ```
+
    
-   取り込み例
+
+   **取り込み例**
 
    ```javascript
    const N = nextNum();
@@ -167,10 +173,12 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
        A.push(nextNum());
    }
    ```
-   
+
    **forループ**を使うのがポイントです。
 
-   取り込み結果
+   
+
+   **取り込み結果**
 
    ```javascript
    // console.log(N);
@@ -178,14 +186,14 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
    // console.log(A);
    [1, 1, 1, 4, 4, 4, 4, 1, 2, 3]
    ```
-   
+
    この例だとまだちょっと良さが実感できないかもしれませんが、次の例は便利さがわかりやすいと思います。
 
-2. [**ABC440 C - Striped Horse**](https://atcoder.jp/contests/abc440/tasks/abc440_c)
+   
 
-   こちら先日2026-01-10のABC440の出題です。
+2. 複数のテストケースがあるパターン
 
-   T個のテストケースがあって、それぞれのテストケースで先程のB問題を取り込むパターンです。
+   以下のような複数のテストケースがあり、それぞれのテストケースを取り込むパターンです。
 
    初めて見るひとはちょっと悩んでしまったりするのではないでしょうか？
 
@@ -193,12 +201,27 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
 
    こういうテストケースをスムーズに取り込むことができれば、本来の解法のロジックに注力できます。
 
-   入力条件
-
-   ![ABC440-Cの入力条件](../images/basement/ABC440C_input_ja.png)
    
-   入力例
 
+   **入力**
+
+   入力は以下の形式で標準入力から与えられる。ここで$\mathrm{case}_i$は$i$番目のテストケースを意味する。
+   
+   > $T$
+   > $\mathrm{case}_1$
+   > $\vdots$
+   > $\mathrm{case}_T$
+   
+   各テストケースは以下の書式で与えられる。
+   
+   > $N$  $W$
+   >
+   > $C_1$  $\dots$  $C_N$
+   
+   
+   
+   **入力例**
+   
    ```
    4
    8 2
@@ -211,8 +234,10 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
    100000 100000 100000 100000
    ```
    
-   取り込み例
-
+   
+   
+   **取り込み例**
+   
    ```javascript
    const T = nextNum();
    const tests = [];
@@ -227,10 +252,12 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
    }
    ```
    
-   Tこのテストケースに対してforループを回していきます。ループのなかでは定数部分を取り込んでいき、さらにその中で配列として取り込んでいき、このときは最後にオブジェクトとしてtestsの配列に格納していきました。
-
-   取り込み結果(表示は整形しています)
-
+   Tこのテストケースに対してforループを回していきます。ループのなかでは定数部分を取り込んでいき、さらにその中で配列として取り込んでいき、最後にオブジェクトとしてtestsの配列に格納していきます。
+   
+   
+   
+   **取り込み結果**
+   
    ```javascript
    // console.log(tests);
    [
@@ -241,7 +268,9 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
    ]
    ```
    
-   わりとシンプルな書き方で、テストケースがしっかり取り込めました。
+   わりとシンプルな書き方で、テストケースがしっかり取り込めました(表示は整形しています)。
+   
+   
 
 ### ✅️ VS Codeのスニペットとして登録(推奨)
 
@@ -327,11 +356,11 @@ function Main(input) {
     const nextBigInt = () => BigInt(next());
     // const lines = input.replace(/\r/g, '').trim().split(/\n/);
 
-    // 👇️ logic here 👇️
+    // 👇️ Logic here 👇️
 
 
 
-    // 👆️ logic here 👆️
+    // 👆️ Logic here 👆️
 }
 
 Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : process.argv[2], "utf8"));
@@ -422,13 +451,20 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
 
 ### ⚔️ Practical Examples
 
-1. [ABC438 **C - 1D puyopuyo**](https://atcoder.jp/contests/abc438/tasks/abc438_c)
+1. Basic pattern
 
-   Problem from ABC438 on 2025-12-27. A pattern where you import 1 to N numbers. This is a very common, basic pattern.
+   A pattern where you import 1 to N numbers. This is a very common, basic pattern.
+
+   
 
    **Input**
 
-   ![ABC438-Cの入力条件](../images/basement/ABC438C_input_en.png)
+   The input is given from Standard Input in the following format:
+
+   > $N$
+   > $T_1 \dots T_N$
+
+   
 
    **Input Example**
 
@@ -436,6 +472,8 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
    10
    1 1 1 4 4 4 4 1 2 3
    ```
+
+   
 
    **Import Example**
 
@@ -458,13 +496,27 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
    [1, 1, 1, 4, 4, 4, 4, 1, 2, 3]
    ```
 
-2. [**ABC440 C - Striped Horse**](https://atcoder.jp/contests/abc440/tasks/abc440_c)
-
-   Problem from ABC440 on 2026-01-10. There are T test cases, and for each test case, you import a pattern similar to the previous problem.
-
+2. Patterns with multiple test cases
+   The following pattern involves handling multiple test cases and processing each one individually. If you are seeing this for the first time, you might find it a bit confusing. I remember struggling with this myself at first, spending about 30 minutes just trying to figure out how to read the input correctly. Once you can smoothly handle these input patterns, you will be able to focus your full attention on the actual logic of the solution.
+   
+   
+   
    **Input**
-
-   ![ABC440-Cの入力条件](../images/basement/ABC440C_input_en.png)
+   
+   The input is given from Standard Input in the following format, where $\mathrm{case}_i$ denotes the $i$-th test case.
+   
+   > $T$
+   > $\mathrm{case}_1$
+   > $\vdots$
+   > $\mathrm{case}_T$
+   
+   Each test case is given in the following format:
+   
+   > $N$  $W$
+   >
+   > $C_1$  $\dots$  $C_N$
+   
+   
    
    **Input Example**
    
@@ -480,6 +532,8 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
    100000 100000 100000 100000
    ```
    
+   
+
    **Import Example**
    
    ```javascript
@@ -495,8 +549,10 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
        tests.push({ N, W, C });
    }
    ```
-
+   
    We loop through T test cases. Inside the loop, we import the constant parts, then import arrays within that, and finally store everything as an object in the `tests` array.
+   
+   
    
    **Import Result** (Formatted for display)
    
@@ -511,6 +567,8 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
    ```
    
    The test cases were imported correctly with relatively simple code.
+   
+   
 
 ### ✅️ Register as VS Code Snippet (Recommended)
 
@@ -541,11 +599,11 @@ Main(require("fs").readFileSync(process.platform === 'linux' ? "/dev/stdin" : pr
 			"    const nextBigInt = () => BigInt(next());",
 			"    // const lines = input.replace(/\\r/g, '').trim().split(/\\n/);",
 			"",
-			"    // 👇️ logic here 👇️",
+			"    // 👇️ Logic here 👇️",
 			"",
 			"    $0",
 			"",
-			"    // 👆️ logic here 👆️",
+			"    // 👆️ Logic here 👆️",
 			"}",
 			"",
 			"Main(require(\"fs\").readFileSync(process.platform === 'linux' ? \"/dev/stdin\" : process.argv[2], \"utf8\"));"
